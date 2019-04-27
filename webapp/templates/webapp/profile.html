@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="offset-3 col-6">
+            <div class="container">
+                <div class="card w-75 mt-5 btn-info">
+                    <div class="card-body">
+            <img src="{% if user.zalegodet.image %}{{ user.zalegodet.image.url }} {% else %}{% static 'webapp/img/avatar.jpg' %} {% endif %}" width="140" height="140" class="rounded-circle">
+            <p><strong>Gender: {{ user.first_name }} {{ user.last_name }}</strong> <br></p>
+            <p><strong>Gender: {{ user.zalegodet.gender }}</strong> <br></p>
+            <p><strong>Language: {{ user.zalegodet.lang }}</strong> <br></p>
+            <p><strong>Username: {{ user.username }}</strong></p>
+
+        </div>
+
+    </div>
+            </div>
+    </div>
+
+
+{% endblock %}

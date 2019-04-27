@@ -1,0 +1,10 @@
+#header{
+        background-color: rgba(238, 47, 36, 0.6) !important;
+
+}
+.display-4
+    {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
